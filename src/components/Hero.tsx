@@ -1,5 +1,5 @@
 
-import { ArrowRight, Zap, Wrench, Hammer } from 'lucide-react';
+import { ArrowRight, Zap, Wrench, Hammer, Calendar, Info } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -41,12 +41,14 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="brutalist-button bg-brutalist-yellow text-brutalist-black group">
-                BOOK A SERVICE
+                <Calendar className="inline w-6 h-6 mr-2" />
+                PRE BOOK NOW
                 <ArrowRight className="inline w-6 h-6 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
               
-              <button className="brutalist-border bg-transparent text-white brutalist-shadow hover:bg-white hover:text-brutalist-black transition-colors px-8 py-4 font-black text-lg uppercase tracking-wider">
-                EMERGENCY CALL
+              <button className="brutalist-border bg-transparent text-white brutalist-shadow hover:bg-white hover:text-brutalist-black transition-colors px-8 py-4 font-black text-lg uppercase tracking-wider group">
+                <Info className="inline w-6 h-6 mr-2" />
+                LEARN MORE
               </button>
             </div>
 
