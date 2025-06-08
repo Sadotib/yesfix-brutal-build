@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, Calendar } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,16 +20,16 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-lg font-black uppercase hover:text-brutalist-yellow transition-colors">
+            <a href="#services" className="text-lg font-black uppercase hover:text-brutalist-yellow transition-colors duration-200 transform hover:scale-110">
               Services
             </a>
-            <a href="#about" className="text-lg font-black uppercase hover:text-brutalist-yellow transition-colors">
+            <a href="#about" className="text-lg font-black uppercase hover:text-brutalist-yellow transition-colors duration-200 transform hover:scale-110">
               About
             </a>
-            <a href="#testimonials" className="text-lg font-black uppercase hover:text-brutalist-yellow transition-colors">
+            <a href="#testimonials" className="text-lg font-black uppercase hover:text-brutalist-yellow transition-colors duration-200 transform hover:scale-110">
               Reviews
             </a>
-            <a href="#contact" className="text-lg font-black uppercase hover:text-brutalist-yellow transition-colors">
+            <a href="#contact" className="text-lg font-black uppercase hover:text-brutalist-yellow transition-colors duration-200 transform hover:scale-110">
               Contact
             </a>
           </nav>
@@ -52,7 +52,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 brutalist-border brutalist-shadow bg-white p-4">
+          <div className="md:hidden mt-4 brutalist-border brutalist-shadow bg-green p-4">
             <nav className="flex flex-col space-y-4">
               <a href="#services" className="text-lg font-black uppercase hover:text-brutalist-yellow">
                 Services

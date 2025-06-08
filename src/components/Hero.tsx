@@ -12,9 +12,11 @@ const Hero = () => {
           ))}
         </div>
       </div>
+      
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+          
           {/* Left Content */}
           <div className="space-y-8 animate-slide-in">
             <div className="space-y-4">
@@ -22,21 +24,27 @@ const Hero = () => {
                 <span className="text-sm font-black uppercase tracking-wider">Local • Reliable • Fast</span>
               </div>
               
-              <h1 className="text-5xl md:text-7xl font-black leading-none">
-                FIX IT
+              <h2 className="text-5xl md:text-7xl font-black leading-none">
+                YOUR
                 <br />
-                <span className="text-brutalist-yellow">RIGHT</span>
+                <span className="text-brutalist-yellow">ONE-STOP</span>
                 <br />
                 <span className="relative">
-                  NOW
+                  SOLUTION FOR 
+                  
+                </span>
+                <br />
+                <span className="text-brutalist-yellow">
+                  HOME & OFFICE SERVICES
                   <div className="absolute -bottom-2 left-0 w-full h-2 bg-brutalist-yellow"></div>
                 </span>
-              </h1>
+              </h2>
             </div>
 
             <p className="text-xl md:text-2xl font-bold text-brutalist-light-grey max-w-lg">
-              YOUR LOCAL NETWORK OF SKILLED ELECTRICIANS, PLUMBERS & REPAIR EXPERTS. 
-              ORGANIZED. PROFESSIONAL. READY.
+              FROM PLUMBING TO CLEANING
+              <br />
+              YESFIX! BRINGS TRUSTED PROFESSIONALS TO YOUR DOORSTEP WITHIN 30 MIN
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -52,25 +60,11 @@ const Hero = () => {
               </button>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
-              <div className="text-center">
-                <div className="text-3xl font-black text-brutalist-yellow">500+</div>
-                <div className="text-sm font-bold uppercase">Jobs Done</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-black text-brutalist-yellow">50+</div>
-                <div className="text-sm font-bold uppercase">Local Pros</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-black text-brutalist-yellow">24/7</div>
-                <div className="text-sm font-bold uppercase">Available</div>
-              </div>
-            </div>
+            
           </div>
 
           {/* Right Content - Visual Elements */}
-          <div className="relative">
+          {/* <div className="relative">
             <div className="grid grid-cols-2 gap-6">
               <div className="brutalist-card bg-brutalist-yellow text-brutalist-black animate-bounce-in">
                 <Zap size={48} className="mb-4" />
@@ -96,8 +90,23 @@ const Hero = () => {
                 <p className="font-bold">Always Ready</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
+        {/* Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-8">
+              <div className="text-center">
+                <div className="text-xl font-black text-brutalist-yellow">VERIFIED</div>
+                <div className="text-sm font-bold uppercase">PROFESSIONALS</div>
+              </div>
+              <div className="text-center">
+                <div className="text-xl font-black text-brutalist-yellow">HASSLE-FREE</div>
+                <div className="text-sm font-bold uppercase">BOOKING</div>
+              </div>
+              <div className="text-center">
+                <div className="text-xl font-black text-brutalist-yellow">PROUDLY</div>
+                <div className="text-sm font-bold uppercase">MADE IN ASSAM</div>
+              </div>
+            </div>
       </div>
     </section>
   );

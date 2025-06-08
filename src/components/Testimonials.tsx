@@ -4,24 +4,24 @@ import { Star } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "RAJESH KUMAR",
+      name: "PARTHA",
       location: "Bangalore",
       rating: 5,
-      text: "YESFIX SAVED MY DAY! AC BROKE DOWN IN SUMMER, THEY SENT SOMEONE IN 1 HOUR. PROFESSIONAL WORK, FAIR PRICE.",
+      text: "[INSERT]",
       service: "AC Repair"
     },
     {
-      name: "PRIYA SHARMA", 
+      name: "BITOPAN", 
       location: "Mumbai",
       rating: 5,
-      text: "EXCELLENT PLUMBING SERVICE. THE WORKER WAS SKILLED AND HONEST. FIXED MY KITCHEN LEAK PERFECTLY.",
+      text: "[INSERT]",
       service: "Plumbing"
     },
     {
-      name: "AMIT PATEL",
+      name: "NITISH",
       location: "Pune", 
       rating: 5,
-      text: "ELECTRICAL WORK WAS DONE SAFELY AND QUICKLY. YESFIX CONNECTS YOU WITH REAL PROFESSIONALS.",
+      text: "[INSERT]",
       service: "Electrical"
     }
   ];
@@ -32,7 +32,7 @@ const Testimonials = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="brutalist-border bg-brutalist-yellow text-brutalist-black px-6 py-3 inline-block mb-6">
-            <span className="text-lg font-black uppercase tracking-wider">Testimonials</span>
+            <span className="text-lg font-black uppercase tracking-wider">WHY PEOPLE LOVE YESFIX</span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-black text-white leading-none mb-6">
@@ -73,21 +73,21 @@ const Testimonials = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-16">
           <div className="text-center">
-            <div className="text-4xl font-black text-brutalist-yellow mb-2">4.9/5</div>
+            <div className="text-4xl font-black text-brutalist-yellow mb-2">[INSERT]</div>
             <div className="text-white font-bold">AVERAGE RATING</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-black text-brutalist-yellow mb-2">500+</div>
+            <div className="text-4xl font-black text-brutalist-yellow mb-2">[INSERT]</div>
             <div className="text-white font-bold">HAPPY CUSTOMERS</div>
           </div>
-          <div className="text-center">
-            <div className="text-4xl font-black text-brutalist-yellow mb-2">98%</div>
+          {/* <div className="text-center">
+            <div className="text-4xl font-black text-brutalist-yellow mb-2">[INSERT]</div>
             <div className="text-white font-bold">SATISFACTION RATE</div>
-          </div>
+          </div> */}
           <div className="text-center">
-            <div className="text-4xl font-black text-brutalist-yellow mb-2">2HRS</div>
+            <div className="text-4xl font-black text-brutalist-yellow mb-2">[INSERT]</div>
             <div className="text-white font-bold">AVG RESPONSE TIME</div>
           </div>
         </div>
