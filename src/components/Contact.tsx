@@ -148,7 +148,7 @@ const Contact = () => {
                 <label className="block font-black mb-2">SUBJECT</label>
                 <textarea
                   className="w-full brutalist-border p-3 text-lg font-bold h-24"
-                  placeholder="TELL US ABOUT YOUR ISSUE"
+                  placeholder="TELL US ANYTHING"
                 ></textarea>
               </div>
 
