@@ -1,0 +1,192 @@
+/* YesFix Brutalist Design System */
+
+:root {
+    --brutalist-yellow: #FFFF00;
+    --brutalist-black: #000000;
+    --brutalist-grey: #333333;
+    --brutalist-light-grey: #CCCCCC;
+}
+
+/* Tailwind Custom Configuration */
+.brutalist-shadow {
+    box-shadow: 8px 8px 0px #000000;
+}
+
+.brutalist-border {
+    border: 4px solid #000000;
+}
+
+.brutalist-button {
+    border: 4px solid #000000;
+    box-shadow: 8px 8px 0px #000000;
+    background-color: var(--brutalist-yellow);
+    color: #000000;
+    font-weight: 900;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: translateX(0) translateY(0);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brutalist-button:hover {
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 4px 4px 0px #000000;
+}
+
+.brutalist-card {
+    border: 4px solid #000000;
+    box-shadow: 8px 8px 0px #000000;
+    background-color: white;
+    padding: 1.5rem;
+    transform: translateX(0) translateY(0);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.brutalist-card:hover {
+    transform: translateX(8px) translateY(8px);
+}
+
+.text-stroke-black {
+    -webkit-text-stroke: 2px #000000;
+    text-stroke: 2px #000000;
+}
+
+.text-stroke-black-thin {
+    -webkit-text-stroke: 1px #000000;
+    text-stroke: 1px #000000;
+}
+
+/* Custom Colors */
+.bg-brutalist-yellow {
+    background-color: var(--brutalist-yellow);
+}
+
+.bg-brutalist-black {
+    background-color: var(--brutalist-black);
+}
+
+.bg-brutalist-grey {
+    background-color: var(--brutalist-grey);
+}
+
+.bg-brutalist-light-grey {
+    background-color: var(--brutalist-light-grey);
+}
+
+.text-brutalist-yellow {
+    color: var(--brutalist-yellow);
+}
+
+.text-brutalist-black {
+    color: var(--brutalist-black);
+}
+
+.text-brutalist-grey {
+    color: var(--brutalist-grey);
+}
+
+.text-brutalist-light-grey {
+    color: var(--brutalist-light-grey);
+}
+
+.border-brutalist-yellow {
+    border-color: var(--brutalist-yellow);
+}
+
+.border-brutalist-black {
+    border-color: var(--brutalist-black);
+}
+
+.border-brutalist-grey {
+    border-color: var(--brutalist-grey);
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in {
+    animation: slideIn 0.5s ease-out;
+}
+
+.animate-bounce-in {
+    animation: bounceIn 0.6s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Form styles */
+input, textarea, select {
+    border: 4px solid #000000;
+    padding: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-color: white;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--brutalist-yellow);
+}
+
+/* Mobile menu transition */
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+#mobile-menu.show {
+    display: block;
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Icon fills for stars */
+.fill-brutalist-yellow {
+    fill: var(--brutalist-yellow);
+}
+
+.stroke-black {
+    stroke: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .brutalist-shadow {
+        box-shadow: 4px 4px 0px #000000;
+    }
+    
+    .brutalist-card:hover {
+        transform: translateX(4px) translateY(4px);
+    }
+    
+    .brutalist-button:hover {
+        transform: translateX(2px) translateY(2px);
+        box-shadow: 2px 2px 0px #000000;
+    }
+}

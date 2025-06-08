@@ -1,25 +1,638 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YesFix - Your One-Stop Solution for Home & Office Services</title>
-    <meta name="description" content="YesFix connects you with verified local electricians, plumbers and repair experts. 24/7 emergency service, same-day booking, fair prices. Organizing India's skilled workforce." />
-    <meta name="author" content="YesFix" />
+    <meta name="description" content="YesFix connects you with verified local electricians, plumbers and repair experts. 24/7 emergency service, same-day booking, fair prices. Organizing India's skilled workforce.">
+    <meta name="author" content="YesFix">
+    
+    <meta property="og:title" content="YesFix - Local Home Repair Services">
+    <meta property="og:description" content="Professional electricians, plumbers and repair experts in your area. Same-day service, fair prices, verified workers.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yesfix_in">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-bold">
+    <!-- Header -->
+    <header id="header" class="brutalist-border border-t-0 border-l-0 border-r-0 bg-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="brutalist-border brutalist-shadow bg-brutalist-yellow px-4 py-2">
+                        <h1 class="text-2xl md:text-3xl font-black text-brutalist-black">
+                            YES<span class="text-white bg-brutalist-black px-1">FIX</span>
+                        </h1>
+                    </div>
+                </div>
 
-    <meta property="og:title" content="YesFix - Local Home Repair Services" />
-    <meta property="og:description" content="Professional electricians, plumbers and repair experts in your area. Same-day service, fair prices, verified workers." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="nav-link text-lg font-black uppercase hover:text-brutalist-yellow hover:text-stroke-black-thin transition-colors duration-200 transform hover:scale-110">
+                        Services
+                    </a>
+                    <a href="#about" class="nav-link text-lg font-black uppercase hover:text-brutalist-yellow hover:text-stroke-black-thin transition-colors duration-200 transform hover:scale-110">
+                        About
+                    </a>
+                    <a href="#testimonials" class="nav-link text-lg font-black uppercase hover:text-brutalist-yellow hover:text-stroke-black-thin transition-colors duration-200 transform hover:scale-110">
+                        Reviews
+                    </a>
+                    <a href="#contact" class="nav-link text-lg font-black uppercase hover:text-brutalist-yellow hover:text-stroke-black-thin transition-colors duration-200 transform hover:scale-110">
+                        Contact
+                    </a>
+                </nav>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@yesfix_in" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+                <!-- CTA Button & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <a href="#contact" class="hidden md:block brutalist-button">
+                        <i data-lucide="phone" class="inline w-5 h-5 mr-2"></i>
+                        CALL NOW
+                    </a>
+                    
+                    <button id="mobile-menu-toggle" class="md:hidden brutalist-border bg-brutalist-yellow p-2">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden mt-4 brutalist-border brutalist-shadow bg-white p-4 hidden">
+                <nav class="flex flex-col space-y-4">
+                    <a href="#services" class="nav-link text-lg font-black uppercase text-brutalist-black hover:text-brutalist-yellow hover:text-stroke-black">
+                        Services
+                    </a>
+                    <a href="#about" class="nav-link text-lg font-black uppercase text-brutalist-black hover:text-brutalist-yellow hover:text-stroke-black">
+                        About
+                    </a>
+                    <a href="#testimonials" class="nav-link text-lg font-black uppercase text-brutalist-black hover:text-brutalist-yellow hover:text-stroke-black">
+                        Reviews
+                    </a>
+                    <a href="#contact" class="nav-link text-lg font-black uppercase text-brutalist-black hover:text-brutalist-yellow hover:text-stroke-black">
+                        Contact
+                    </a>
+                    <a href="#contact" class="brutalist-button inline-flex items-center justify-center">
+                        <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+                        CALL NOW
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-brutalist-black text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="grid grid-cols-6 h-full">
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+                <div class="border border-brutalist-yellow"></div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+                <!-- Left Content -->
+                <div class="space-y-8 animate-slide-in">
+                    <div class="space-y-4">
+                        <div class="brutalist-border bg-brutalist-yellow text-brutalist-black px-4 py-2 inline-block">
+                            <span class="text-sm font-black uppercase tracking-wider">Local • Reliable • Fast</span>
+                        </div>
+                        
+                        <h2 class="text-5xl md:text-7xl font-black leading-none">
+                            YOUR
+                            <br>
+                            <span class="text-brutalist-yellow">ONE-STOP</span>
+                            <br>
+                            <span class="relative">
+                                SOLUTION FOR 
+                            </span>
+                            <br>
+                            <span class="text-brutalist-yellow relative">
+                                HOME & OFFICE SERVICES
+                                <div class="absolute -bottom-2 left-0 w-full h-2 bg-brutalist-yellow"></div>
+                            </span>
+                        </h2>
+                    </div>
+
+                    <p class="text-xl md:text-2xl font-bold text-gray-300 max-w-lg">
+                        FROM PLUMBING TO CLEANING
+                        <br>
+                        YESFIX! BRINGS TRUSTED PROFESSIONALS TO YOUR DOORSTEP WITHIN 30 MIN
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="brutalist-button bg-brutalist-yellow text-brutalist-black group">
+                            <i data-lucide="calendar" class="inline w-6 h-6 mr-2"></i>
+                            PRE BOOK NOW
+                            <i data-lucide="arrow-right" class="inline w-6 h-6 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                        
+                        <button class="brutalist-border bg-transparent text-white brutalist-shadow hover:bg-white hover:text-brutalist-black transition-colors px-8 py-4 font-black text-lg uppercase tracking-wider group">
+                            <i data-lucide="info" class="inline w-6 h-6 mr-2"></i>
+                            LEARN MORE
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-6 pt-8">
+                <div class="text-center">
+                    <div class="text-xl font-black text-brutalist-yellow">VERIFIED</div>
+                    <div class="text-sm font-bold uppercase">PROFESSIONALS</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xl font-black text-brutalist-yellow">HASSLE-FREE</div>
+                    <div class="text-sm font-bold uppercase">BOOKING</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xl font-black text-brutalist-yellow">PROUDLY</div>
+                    <div class="text-sm font-bold uppercase">MADE IN ASSAM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <div class="brutalist-border bg-brutalist-black text-white px-6 py-3 inline-block mb-6">
+                    <span class="text-lg font-black uppercase tracking-wider">SERVICES WE OFFER</span>
+                </div>
+
+                <h2 class="text-4xl md:text-6xl font-black text-brutalist-black leading-none mb-6">
+                    WE FIX
+                    <br>
+                    <span class="text-brutalist-yellow text-stroke-black">EVERYTHING</span>
+                </h2>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="brutalist-card group hover:bg-brutalist-yellow transition-colors text-brutalist-black">
+                    <div class="mb-6">
+                        <i data-lucide="zap" class="w-16 h-16 text-brutalist-grey"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-brutalist-black mb-2">ELECTRICAL</h3>
+                    <p class="text-lg font-bold text-brutalist-grey mb-6">FROM SIMPLE REPAIRS TO COMPLETE REWIRING</p>
+                </div>
+
+                <div class="brutalist-card group hover:bg-brutalist-yellow transition-colors text-brutalist-black">
+                    <div class="mb-6">
+                        <i data-lucide="wrench" class="w-16 h-16 text-brutalist-grey"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-brutalist-black mb-2">PLUMBING</h3>
+                    <p class="text-lg font-bold text-brutalist-grey mb-6">PIPES, LEAKS, AND EVERYTHING WATER</p>
+                </div>
+
+                <div class="brutalist-card group hover:bg-brutalist-yellow transition-colors text-brutalist-black">
+                    <div class="mb-6">
+                        <i data-lucide="hammer" class="w-16 h-16 text-brutalist-grey"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-brutalist-black mb-2">REPAIRS</h3>
+                    <p class="text-lg font-bold text-brutalist-grey mb-6">AC, APPLIANCES, AND GENERAL MAINTENANCE</p>
+                </div>
+
+                <div class="brutalist-card group hover:bg-brutalist-yellow transition-colors text-brutalist-black">
+                    <div class="mb-6">
+                        <i data-lucide="shield-check" class="w-16 h-16 text-brutalist-grey"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-brutalist-black mb-2">CLEANING</h3>
+                    <p class="text-lg font-bold text-brutalist-grey mb-6">GENERAL CLEANING AND DEEP SANITIZATION</p>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="brutalist-border bg-brutalist-yellow p-6 inline-block mb-4">
+                        <i data-lucide="timer" class="w-12 h-12 text-brutalist-grey"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-2">QUICK SERVICE</h4>
+                    <p class="font-bold text-brutalist-grey">Get a handyman within 30 minutes or get ₹200.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="brutalist-border bg-brutalist-yellow p-6 inline-block mb-4">
+                        <i data-lucide="indian-rupee" class="w-12 h-12 text-brutalist-grey"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-2">FIXED PLATFORM FEE</h4>
+                    <p class="font-bold text-brutalist-grey">₹29 per order, ensuring transparency.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="brutalist-border bg-brutalist-yellow p-6 inline-block mb-4">
+                        <i data-lucide="clock" class="w-12 h-12 text-brutalist-grey"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-2">SUBSCRIPTION PLANS</h4>
+                    <p class="font-bold text-brutalist-grey">Affordable maintenance packages for homes & corporate offices</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="brutalist-border bg-brutalist-yellow p-6 inline-block mb-4">
+                        <i data-lucide="shield-check" class="w-12 h-12 text-brutalist-grey"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-2">VERIFIED PROFESSIONALS</h4>
+                    <p class="font-bold text-brutalist-grey">Only 4-star+ rated service providers are onboarded.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Content -->
+                <div>
+                    <div class="brutalist-border bg-brutalist-black text-white px-6 py-3 inline-block mb-6">
+                        <span class="text-lg font-black uppercase tracking-wider">About YesFix</span>
+                    </div>
+
+                    <h2 class="text-4xl md:text-5xl font-black text-brutalist-black leading-none mb-6">
+                        <span class="text-brutalist-yellow text-stroke-black">YES</span>
+                        FIX! THE GAMUSA OF SERVICES
+                    </h2>
+
+                    <div class="space-y-6 text-lg font-bold text-brutalist-grey">
+                        <p>
+                            YesFix! is an on-demand service provider startup focused on tier-2 and tier-3 cities, where quality home services are still untapped. We offer electricians, plumbers, cleaning, appliance repair, and more, ensuring fast, reliable, and affordable services. We are not India's first, but we are building India's best option!
+                        </p>
+                        <p>
+                            What YesFix! Solves
+                            <br>
+                            1.Unreliable & Delayed Local Services
+                            <br>
+                            2.Lack of Trust & Standard Pricing
+                            <br>
+                            3.No Quick Commerce in Services
+                            <br>
+                            4.Corporate Maintenance Gaps
+                        </p>
+                    </div>
+
+                    <div class="mt-8">
+                        <button class="brutalist-button">
+                            JOIN OUR NETWORK
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Content - Values -->
+                <div class="space-y-8">
+                    <div class="brutalist-card group hover:bg-brutalist-yellow transition-colors">
+                        <h3 class="text-2xl font-black text-brutalist-black mb-3">1.</h3>
+                        <p class="text-lg font-bold text-brutalist-grey group-hover:text-brutalist-black">
+                            We bring fast & professional service.
+                        </p>
+                    </div>
+
+                    <div class="brutalist-card group hover:bg-brutalist-yellow transition-colors">
+                        <h3 class="text-2xl font-black text-brutalist-black mb-3">2.</h3>
+                        <p class="text-lg font-bold text-brutalist-grey group-hover:text-brutalist-black">
+                            Fixed pricing, no overcharging.
+                        </p>
+                    </div>
+
+                    <div class="brutalist-card group hover:bg-brutalist-yellow transition-colors">
+                        <h3 class="text-2xl font-black text-brutalist-black mb-3">3.</h3>
+                        <p class="text-lg font-bold text-brutalist-grey group-hover:text-brutalist-black">
+                            Instant availability in tier-2 & tier-3 cities.
+                        </p>
+                    </div>
+
+                    <div class="brutalist-card group hover:bg-brutalist-yellow transition-colors">
+                        <h3 class="text-2xl font-black text-brutalist-black mb-3">4.</h3>
+                        <p class="text-lg font-bold text-brutalist-grey group-hover:text-brutalist-black">
+                            Dedicated service plans for offices & businesses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-brutalist-grey">
+        <div class="container mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <div class="brutalist-border bg-brutalist-yellow text-brutalist-black px-6 py-3 inline-block mb-6">
+                    <span class="text-lg font-black uppercase tracking-wider">WHY PEOPLE LOVE YESFIX</span>
+                </div>
+                
+                <h2 class="text-4xl md:text-6xl font-black text-white leading-none mb-6">
+                    REAL PEOPLE
+                    <br>
+                    <span class="text-brutalist-yellow text-stroke-black">REAL FIXES</span>
+                </h2>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="brutalist-card bg-white">
+                    <!-- Stars -->
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                    </div>
+                    
+                    <!-- Service Badge -->
+                    <div class="brutalist-border bg-brutalist-black text-white px-3 py-1 inline-block mb-4">
+                        <span class="text-sm font-black uppercase">AC Repair</span>
+                    </div>
+                    
+                    <!-- Quote -->
+                    <blockquote class="text-lg font-bold text-brutalist-black mb-6 leading-tight">
+                        "[INSERT]"
+                    </blockquote>
+                    
+                    <!-- Author -->
+                    <div class="border-t-4 border-brutalist-grey pt-4">
+                        <div class="font-black text-brutalist-black">PARTHA</div>
+                        <div class="font-bold text-brutalist-grey text-sm">Bangalore</div>
+                    </div>
+                </div>
+
+                <div class="brutalist-card bg-white">
+                    <!-- Stars -->
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                    </div>
+                    
+                    <!-- Service Badge -->
+                    <div class="brutalist-border bg-brutalist-black text-white px-3 py-1 inline-block mb-4">
+                        <span class="text-sm font-black uppercase">Plumbing</span>
+                    </div>
+                    
+                    <!-- Quote -->
+                    <blockquote class="text-lg font-bold text-brutalist-black mb-6 leading-tight">
+                        "[INSERT]"
+                    </blockquote>
+                    
+                    <!-- Author -->
+                    <div class="border-t-4 border-brutalist-grey pt-4">
+                        <div class="font-black text-brutalist-black">BITOPAN</div>
+                        <div class="font-bold text-brutalist-grey text-sm">Mumbai</div>
+                    </div>
+                </div>
+
+                <div class="brutalist-card bg-white">
+                    <!-- Stars -->
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                    </div>
+                    
+                    <!-- Service Badge -->
+                    <div class="brutalist-border bg-brutalist-black text-white px-3 py-1 inline-block mb-4">
+                        <span class="text-sm font-black uppercase">Electrical</span>
+                    </div>
+                    
+                    <!-- Quote -->
+                    <blockquote class="text-lg font-bold text-brutalist-black mb-6 leading-tight">
+                        "[INSERT]"
+                    </blockquote>
+                    
+                    <!-- Author -->
+                    <div class="border-t-4 border-brutalist-grey pt-4">
+                        <div class="font-black text-brutalist-black">NITISH</div>
+                        <div class="font-bold text-brutalist-grey text-sm">Pune</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-16">
+                <div class="text-center">
+                    <div class="text-4xl font-black text-brutalist-yellow mb-2">[INSERT]</div>
+                    <div class="text-white font-bold">AVERAGE RATING</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-black text-brutalist-yellow mb-2">[INSERT]</div>
+                    <div class="text-white font-bold">HAPPY CUSTOMERS</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-black text-brutalist-yellow mb-2">[INSERT]</div>
+                    <div class="text-white font-bold">AVG RESPONSE TIME</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-brutalist-black text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Left Content -->
+                <div>
+                    <div class="brutalist-border bg-brutalist-yellow text-brutalist-black px-6 py-3 inline-block mb-6">
+                        <span class="text-lg font-black uppercase tracking-wider">Get In Touch</span>
+                    </div>
+
+                    <h2 class="text-4xl md:text-5xl font-black leading-none mb-6">
+                        NEED A FIX?
+                        <br>
+                        <span class="text-brutalist-yellow">CALL NOW!</span>
+                    </h2>
+
+                    <p class="text-xl font-bold text-gray-300 mb-8">
+                        SAME-DAY SERVICE FOR REGULAR BOOKINGS.
+                    </p>
+
+                    <!-- Contact Info -->
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="brutalist-border bg-brutalist-yellow p-3">
+                                <i data-lucide="phone" class="w-6 h-6 text-brutalist-grey"></i>
+                            </div>
+                            <div>
+                                <div class="font-black text-lg">CALL US NOW</div>
+                                <div class="text-brutalist-yellow text-xl font-bold">[INSERT]</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="brutalist-border bg-brutalist-yellow p-3">
+                                <i data-lucide="mail" class="w-6 h-6 text-brutalist-grey"></i>
+                            </div>
+                            <div>
+                                <div class="font-black text-lg">EMAIL US</div>
+                                <div class="text-brutalist-yellow text-xl font-bold">[INSERT]</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="brutalist-border bg-brutalist-yellow p-3">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-brutalist-grey"></i>
+                            </div>
+                            <div>
+                                <div class="font-black text-lg">SERVICE AREAS</div>
+                                <div class="text-brutalist-yellow text-xl font-bold">DIBRUGARH</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="brutalist-border bg-brutalist-yellow p-3">
+                                <i data-lucide="clock" class="w-6 h-6 text-brutalist-grey"></i>
+                            </div>
+                            <div>
+                                <div class="font-black text-lg">WORKING HOURS</div>
+                                <div class="text-brutalist-yellow text-xl font-bold">[INSERT]</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Contact Form -->
+                <div class="brutalist-card bg-white text-brutalist-black">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block font-black mb-2">YOUR NAME</label>
+                            <input
+                                type="text"
+                                class="w-full brutalist-border p-3 text-lg font-bold"
+                                placeholder="ENTER YOUR NAME"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="block font-black mb-2">PHONE NUMBER</label>
+                            <input
+                                type="tel"
+                                class="w-full brutalist-border p-3 text-lg font-bold"
+                                placeholder="YOUR PHONE NUMBER"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="block font-black mb-2">SUBJECT</label>
+                            <textarea
+                                class="w-full brutalist-border p-3 text-lg font-bold h-24"
+                                placeholder="TELL US ANYTHING"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full brutalist-button">
+                            SEND MESSAGE
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t-4 border-brutalist-black">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Logo & Description -->
+                <div class="md:col-span-1">
+                    <div class="brutalist-border brutalist-shadow bg-brutalist-yellow px-4 py-2 inline-block mb-4">
+                        <h3 class="text-2xl font-black text-brutalist-black">
+                            YES<span class="text-white bg-brutalist-black px-1">FIX</span>
+                        </h3>
+                    </div>
+                    <p class="text-lg font-bold text-brutalist-grey mb-6">
+                        ORGANIZING INDIA'S SKILLED WORKFORCE. 
+                        CONNECTING CUSTOMERS WITH VERIFIED LOCAL PROFESSIONALS.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                            <div class="brutalist-border bg-brutalist-black p-2 hover:bg-brutalist-yellow transition-colors cursor-pointer">
+                                <i data-lucide="facebook" class="w-5 h-5 text-white hover:text-brutalist-black"></i>
+                            </div>
+                        </a>
+                        <div class="brutalist-border bg-brutalist-black p-2 hover:bg-brutalist-yellow transition-colors cursor-pointer">
+                            <i data-lucide="twitter" class="w-5 h-5 text-white hover:text-brutalist-black"></i>
+                        </div>
+                        <div class="brutalist-border bg-brutalist-black p-2 hover:bg-brutalist-yellow transition-colors cursor-pointer">
+                            <i data-lucide="instagram" class="w-5 h-5 text-white hover:text-brutalist-black"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-xl font-black text-brutalist-black mb-4">CONTACT</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                            <span class="font-bold text-brutalist-grey">[INSERT]</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                            <span class="font-bold text-brutalist-grey">[INSERT]</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 fill-brutalist-yellow text-brutalist-yellow stroke-black"></i>
+                            <span class="font-bold text-brutalist-grey">DIBRUGARH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t-4 border-brutalist-black mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="font-black text-brutalist-black mb-4 md:mb-0">
+                    © 2024 YESFIX. ALL RIGHTS RESERVED.
+                </div>
+                <div class="flex space-x-6 font-bold text-brutalist-grey">
+                    <a href="#" class="hover:text-brutalist-yellow">PRIVACY POLICY</a>
+                    <a href="#" class="hover:text-brutalist-yellow">TERMS OF SERVICE</a>
+                    <a href="#" class="hover:text-brutalist-yellow">JOIN AS WORKER</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="navigation.js"></script>
+    <script src="animations.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
 </html>
