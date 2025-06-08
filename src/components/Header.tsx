@@ -54,16 +54,16 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 brutalist-border brutalist-shadow bg-green p-4">
             <nav className="flex flex-col space-y-4">
-              <a href="#services" className="text-lg font-black uppercase hover:text-brutalist-yellow">
+              <a href="#services" className="text-lg font-black uppercase text-brutalist-black hover:text-brutalist-yellow hover:text-stroke-black">
                 Services
               </a>
-              <a href="#about" className="text-lg font-black uppercase hover:text-brutalist-yellow">
+              <a href="#about" className="text-lg font-black uppercase text-brutalist-black hover:text-brutalist-yellow hover:text-stroke-black">
                 About
               </a>
-              <a href="#testimonials" className="text-lg font-black uppercase hover:text-brutalist-yellow">
+              <a href="#testimonials" className="text-lg font-black uppercase text-brutalist-black hover:text-brutalist-yellow hover:text-stroke-black">
                 Reviews
               </a>
-              <a href="#contact" className="text-lg font-black uppercase hover:text-brutalist-yellow">
+              <a href="#contact" className="text-lg font-black uppercase text-brutalist-black hover:text-brutalist-yellow hover:text-stroke-black">
                 Contact
               </a>
               <a href="#contact" className="brutalist-button inline-flex items-center justify-center">
