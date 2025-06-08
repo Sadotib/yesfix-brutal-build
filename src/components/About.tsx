@@ -13,7 +13,7 @@ const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-black text-brutalist-black leading-none mb-6">
-              <span className="text-brutalist-yellow">YES</span>
+              <span className="text-brutalist-yellow text-stroke-black">YES</span>
               FIX! THE GAMUSA OF SERVICES
               <br />
 

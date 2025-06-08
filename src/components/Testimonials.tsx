@@ -38,7 +38,7 @@ const Testimonials = () => {
           <h2 className="text-4xl md:text-6xl font-black text-white leading-none mb-6">
             REAL PEOPLE
             <br />
-            <span className="text-brutalist-yellow">REAL FIXES</span>
+            <span className="text-brutalist-yellow text-stroke-black">REAL FIXES</span>
           </h2>
         </div>
 
@@ -47,9 +47,9 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="brutalist-card bg-white">
               {/* Stars */}
-              <div className="flex mb-4">
+              <div className="flex mb-4 ">
                 {Array.from({ length: testimonial.rating }).map((_, idx) => (
-                  <Star key={idx} size={24} className="fill-brutalist-yellow text-brutalist-yellow" />
+                  <Star key={idx} size={24} className="fill-brutalist-yellow text-brutalist-yellow stroke-black" />
                 ))}
               </div>
               
@@ -64,7 +64,7 @@ const Testimonials = () => {
               </blockquote>
               
               {/* Author */}
-              <div className="border-t-4 border-brutalist-yellow pt-4">
+              <div className="border-t-4 border-brutalist-grey pt-4">
                 <div className="font-black text-brutalist-black">{testimonial.name}</div>
                 <div className="font-bold text-brutalist-grey text-sm">{testimonial.location}</div>
               </div>

@@ -53,7 +53,7 @@ const Services = () => {
           <h2 className="text-4xl md:text-6xl font-black text-brutalist-black leading-none mb-6">
             WE FIX
             <br />
-            <span className="text-brutalist-yellow">EVERYTHING</span>
+            <span className="text-brutalist-yellow text-stroke-black">EVERYTHING</span>
           </h2>
 
           {/* <p className="text-xl font-bold text-brutalist-grey max-w-2xl mx-auto">

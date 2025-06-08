@@ -50,15 +50,15 @@ const Footer = () => {
             <h4 className="text-xl font-black text-brutalist-black mb-4">CONTACT</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
-                <Phone size={16} className="text-brutalist-yellow" />
+                <Phone size={16} className="fill-brutalist-yellow text-brutalist-yellow stroke-black" />
                 <span className="font-bold text-brutalist-grey">[INSERT]</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail size={16} className="text-brutalist-yellow" />
+                <Mail size={16} className="fill-brutalist-yellow text-brutalist-yellow stroke-black" />
                 <span className="font-bold text-brutalist-grey">[INSERT]</span>
               </div>
               <div className="flex items-center space-x-2">
-                <MapPin size={16} className="text-brutalist-yellow" />
+                <MapPin size={16} className="fill-brutalist-yellow text-brutalist-yellow stroke-black" />
                 <span className="font-bold text-brutalist-grey">DIBRUGARH</span>
               </div>
             </div>
