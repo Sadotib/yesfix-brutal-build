@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X, Phone, Calendar } from 'lucide-react';
 
@@ -9,9 +8,15 @@ const Header = () => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      // Calculate header height and add some padding
+      const headerHeight = 80; // Approximate header height
+      const additionalOffset = 20; // Extra padding for better visibility
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight - additionalOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
       });
     }
     // Close mobile menu after clicking
