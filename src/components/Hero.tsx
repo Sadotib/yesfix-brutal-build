@@ -1,7 +1,11 @@
 
 import { ArrowRight, Zap, Wrench, Hammer, Calendar, Info } from 'lucide-react';
 
-const Hero = () => {
+interface HeroProps {
+  onPreBookClick: () => void;
+}
+
+const Hero = ({ onPreBookClick }: HeroProps) => {
   return (
     <section className="min-h-screen bg-brutalist-black text-white relative overflow-hidden">
       {/* Background Pattern */}
@@ -48,7 +52,10 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="brutalist-button bg-brutalist-yellow text-brutalist-black group">
+              <button 
+                onClick={onPreBookClick}
+                className="brutalist-button bg-brutalist-yellow text-brutalist-black group"
+              >
                 <Calendar className="inline w-6 h-6 mr-2" />
                 PRE BOOK NOW
                 <ArrowRight className="inline w-6 h-6 ml-2 group-hover:translate-x-1 transition-transform" />

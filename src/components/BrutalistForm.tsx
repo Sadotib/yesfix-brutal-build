@@ -1,8 +1,12 @@
-
 import React, { useState } from 'react';
-import { User, Mail, Phone, MessageSquare } from 'lucide-react';
+import { User, Mail, Phone, MessageSquare, X } from 'lucide-react';
 
-const BrutalistForm = () => {
+interface BrutalistFormProps {
+  isVisible: boolean;
+  onClose: () => void;
+}
+
+const BrutalistForm = ({ isVisible, onClose }: BrutalistFormProps) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -24,13 +28,24 @@ const BrutalistForm = () => {
     // Handle form submission here
     alert('FORM SUBMITTED!');
     setFormData({ name: '', email: '', phone: '', message: '' });
+    onClose(); // Close form after submission
   };
+
+  if (!isVisible) return null;
 
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-2xl">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 relative">
+          <button
+            onClick={onClose}
+            className="absolute top-0 right-0 brutalist-border bg-brutalist-black text-white p-3 hover:bg-brutalist-grey transition-colors"
+            aria-label="Close form"
+          >
+            <X size={24} />
+          </button>
+          
           <div className="brutalist-border bg-brutalist-yellow text-brutalist-black px-6 py-3 inline-block mb-6">
             <span className="text-lg font-black uppercase tracking-wider">Contact Form</span>
           </div>
