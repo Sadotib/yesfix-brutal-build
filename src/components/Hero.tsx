@@ -1,5 +1,5 @@
 
-import { ArrowRight, Download, MessageCircle, Smartphone, Play } from 'lucide-react';
+import { ArrowRight, Download, MessageCircle, Smartphone, Play, Zap, Shield, MapPin } from 'lucide-react';
 
 const Hero = () => {
   const handlePlayStoreClick = () => {
@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="space-y-8 animate-slide-in">
             <div className="space-y-4">
               <div className="brutalist-border bg-brutalist-yellow text-brutalist-black px-4 py-2 inline-block animate-bounce">
-                <span className="text-sm font-black uppercase tracking-wider">🎉 NOW LIVE ON ANDROID & iOS!</span>
+                <span className="text-sm font-black uppercase tracking-wider">🎉 NOW AVAILABLE ON ANDROID & iOS!</span>
               </div>
               
               <h1 className="text-4xl md:text-6xl font-black leading-none">
@@ -118,17 +118,26 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Updated Stats */}
-        <div className="grid grid-cols-3 gap-6 pt-8">
+        {/* Feature Highlights - Fast | Reliable | Local */}
+        <div className="grid grid-cols-3 gap-6 pt-16">
           <div className="text-center">
+            <div className="brutalist-border bg-brutalist-yellow p-4 inline-block mb-4">
+              <Zap size={32} className="text-brutalist-black" />
+            </div>
             <div className="text-xl font-black text-brutalist-yellow">FAST</div>
             <div className="text-sm font-bold uppercase">INSTANT APP BOOKING</div>
           </div>
           <div className="text-center">
+            <div className="brutalist-border bg-brutalist-yellow p-4 inline-block mb-4">
+              <Shield size={32} className="text-brutalist-black" />
+            </div>
             <div className="text-xl font-black text-brutalist-yellow">RELIABLE</div>
             <div className="text-sm font-bold uppercase">VERIFIED PROFESSIONALS</div>
           </div>
           <div className="text-center">
+            <div className="brutalist-border bg-brutalist-yellow p-4 inline-block mb-4">
+              <MapPin size={32} className="text-brutalist-black" />
+            </div>
             <div className="text-xl font-black text-brutalist-yellow">LOCAL</div>
             <div className="text-sm font-bold uppercase">PROUDLY SERVING DIBRUGARH</div>
           </div>
