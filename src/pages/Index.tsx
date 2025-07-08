@@ -1,33 +1,25 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import About from '@/components/About';
+import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
-import BrutalistForm from '@/components/BrutalistForm';
+import AppDownloadCTA from '@/components/AppDownloadCTA';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 const Index = () => {
-  const [isFormVisible, setIsFormVisible] = useState(false);
-
-  const handlePreBookClick = () => {
-    setIsFormVisible(true);
-  };
-
-  const handleFormClose = () => {
-    setIsFormVisible(false);
-  };
-
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero onPreBookClick={handlePreBookClick} />
+      <Hero />
       <Services />
       <About />
+      <HowItWorks />
       <Testimonials />
-      <BrutalistForm isVisible={isFormVisible} onClose={handleFormClose} />
+      <AppDownloadCTA />
       <Contact />
       <Footer />
     </div>
