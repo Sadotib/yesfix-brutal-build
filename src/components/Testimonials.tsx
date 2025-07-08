@@ -52,12 +52,12 @@ const Testimonials = () => {
   };
 
   const handleExternalLink = (platform: string) => {
-    const links = {
+    const links: { [key: string]: string } = {
       google: 'https://www.google.com/search?q=YesFix+Dibrugarh+reviews',
       playstore: 'https://play.google.com/store/apps/details?id=com.yesfix.app',
       appstore: 'https://apps.apple.com/app/yesfix/id123456789'
     };
-    window.open(links[platform as keyof typeof links], '_blank');
+    window.open(links[platform], '_blank');
   };
 
   return (
